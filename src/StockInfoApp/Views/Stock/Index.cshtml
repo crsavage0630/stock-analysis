@@ -1,0 +1,23 @@
+﻿@model StockInfoApp.Models.Stock.StockModel
+
+@{
+    ViewData["Title"] = "Stock Information";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Stock Information</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Current Price</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>@Model.Symbol</td>
+                    <td>@Model.RegularMarketPrice</td>
+                </tr>
+        </tbody>
+    </table>
+</div>
