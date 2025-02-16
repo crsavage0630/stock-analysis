@@ -23,7 +23,7 @@ namespace StockInfoApp.Controllers
                 RegularMarketPrice = result.RegularMarketPrice
             };
 
-            return View();
+            return View(model);
         }
     }
 }
